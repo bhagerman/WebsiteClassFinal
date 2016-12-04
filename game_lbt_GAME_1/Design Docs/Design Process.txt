@@ -1,0 +1,16 @@
+Features
+-Narrative
+-Platforming Basics
+	-Jumping, Running, Falling, Dying, Collecting, Finishing
+
+Design
+-Broken down into parts? What parts?
+
+Story
+-Narrative, before levels. Levels and narrative are themed, together.
+
+Art
+-Tiles, Characters, Screens, UI
+
+Sound
+-Actions, ui interactions, collections, death, game music, other.

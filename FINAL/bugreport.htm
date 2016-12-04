@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-16" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- 
+   Final - Bug Report Page
+   Author: Brandon Hagerman
+   Date:   12/10/2010
+
+   Filename:         bugreport.htm
+   Supporting files: main.css,
+   -->
+   <title>Submit a Bug Report</title>
+   <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+      <div id="head">
+	  
+	  <a href="intro.htm" id="mainLogo">
+	  <img src="headerlogo.jpg" width="125" height="125" alt="War TD Logo"  /></a>
+		
+
+         <ul>
+            <li><a href="intro.htm">Introduction</a></li>
+            <li><a href="gameui.htm">The game UI</a></li>
+            <li><a href="unitsMain.htm">Units</a></li>
+            <li><a href="bugreport.htm">Bug Report</a></li>
+            <li><a href="changelog.htm">Change Log</a></li>
+            <li><a href="about.htm">About</a></li>
+			<li><a href="mailto:storpg@gmail.com?Subject=ST's%20War%20TD">storpg@gmail</a></li>
+         </ul>
+      </div>
+
+      <div id="description" style="float:left">
+        <h1>&#149; 	Do you have a bug to report? &#149;
+			<br />
+					(Post Final Note: This Doesn't Actually Do Anything)</h1> 
+		 <form name="reportForm" id="reportForm" action="" method="post" enctype="multipart/form-data"/>
+		 <input type="hidden" name="eMail" id="eMail" value="storpg@gmail.com"/>
+		 <fieldset id="contactFields">
+		 <legend>Map Information</legend>
+		 <label><input type="checkbox" name="currentVERSION" id="currentVERSION"/>This is for version 1.3</label> 
+		 <label class="format">
+			Which player color were you?
+			<input type="text" id="colorName" name="colorName" />
+		 </label>
+		 <label class="format">
+			What wave were you on when this bug occured?
+			<input type="text" id="waveCount" name="waveCount" />
+		</label>		 
+		</fieldset>
+		 <fieldset id="bugmainInfo">
+		<legend>Please Describe what occured.</legend>
+		 <textarea id="comments" name="comments" rows="7" cols="75"></textarea>
+		 </fieldset>
+		 <input type="submit" value="Submit Bug" />
+		 <input type="reset" value="Cancel" />
+		 		
+	 </div>
+	 
+
+</body></html>

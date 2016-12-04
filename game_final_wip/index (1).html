@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Interactive Fiction</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="player_inventory">
+  <span class="item-container"><h3>Inventory:</h3>
+    <div class="inventory-box empty"></div>
+    <div class="inventory-box empty"></div>
+    <div class="inventory-box empty"></div>
+  </span>
+</div>
+<div id="steps-taken">
+  <h3>Steps Taken:</h3>
+  <ul id='steps'>
+  </ul>
+</div>
+
+<div id="impress">
+    <div id="intro" class="step slide">
+      <div class="slide-text">
+        <p>BUZZ! BUZZ! BUZZ!</br> (Its time to wake up!) </p>
+        <p><a href='#hit'>HIT</a> the alarm to turn it off.</p>
+		<p><a href='#sleep'>SLEEP</a> - You don't really want to get up yet.</p>
+        <!-- <p><a href='#slide3'>WAIT</a> for your dad, who is a scientist, to come home</p> -->
+        <div class="event-text"></div>
+     </div>
+    
+    </div>
+	 
+    <div id="sleep" class="step slide" data-x="1500">
+      <div class="slide-text">
+        <p>BUZZ! BUZZ! BUZZ!</br>BUZZ! BUZZ! BUZZ!</br>BUZZ! BUZZ! BUZZ!</br> (You can't sleep with that noise!) </p>
+		<p><a href='#hit'>HIT</a> the alarm to turn it off.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+	<div id="hit" class="step slide" data-x="2500">
+      <div class="slide-text">
+        <p>You reach your arm out and sleepily hit the alarm. It falls to the floor and breaks. </p>
+		<p><a href='#sleepmore'>SLEEP</a> - Get your much needed rest.</p>
+		<p><a href='#getUp'>GET UP</a> - Get out of bed.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+		<div id="sleepmore" class="step slide" data-x="3500">
+      <div class="slide-text">
+        <p>You get more sleep. </p>
+		<p><a href='#getUp'>GET UP</a> - Get out of bed.</p>
+		<p><a href='#sleepmore'>SLEEP</a> - Get more sleep, lazy!</p>
+		
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+		<div id="getUp" class="step slide" data-x="4500">
+      <div class="slide-text">
+        <p>You get out of bed, rubbing your groggy eyes. The room comes into focus.</br></br>
+			You realize this isn't your room!</p>
+		<p><a href='#lookAround'>LOOK AROUND</a> - Study the room for a bit.</p>
+		<p><a href='#rushDoor'>TRY DOOR</a> - Attempt to head for the exit.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+	
+			<div id="lookAround" class="step slide" data-x="5500">
+      <div class="slide-text">
+        <p>You gaze around the room, its almost barren. There is a bed, nightstand, chair and a door.</p>
+		<p><a href='#bed'>TRY BED</a> - Examine the bed.</p>
+		<p><a href='#nightstand'>TRY NIGHTSTAND</a> - Examine the nightstand.</p>
+		<p><a href='#chair'>TRY CHAIR</a> - Examine the chair.</p>
+		<p><a href='#rushDoor'>TRY DOOR</a> - Attempt to head for the exit.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+	
+	
+			<div id="rushDoor" class="step slide" data-x="6500">
+      <div class="slide-text">
+        <p>You rush towards the door, in a panic.</p>
+		<p><a href='#attemptLock'>TRY KNOB</a> - Open the door.</p>
+		<p><a href='#lookAround'>LOOK AROUND</a> - Study the room for a bit.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+			<div id="attemptLock" class="step slide" data-x="7500">
+      <div class="slide-text">
+        <p> You reach for the doorknob and it won't turn.</br></br>
+			You try again. And again.</br> It wont budge, locked for sure.</p>
+		<p><a href='#lookAround'>LOOK AROUND</a> - Study the room for a bit.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>	
+			<div id="bed" class="step slide" data-x="8500">
+      <div class="slide-text">
+        <p>Its the bed you got out of.</br> Just blankets, nothing special.</p>
+		<p><a href='#lookAround'>LOOK AROUND</a> - Study the room for a bit.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+				<div id="nightstand" class="step slide" data-x="9500">
+      <div class="slide-text">
+        <p>Its an old nightstand, with a drawer.</br> The broken alarm clock is on the floor in front of it.</p>
+				<p><a href='#drawer'>OPEN DRAWER</a> - Open the drawer.</p>
+		<p><a href='#lookAround'>LOOK AROUND</a> - Study the room for a bit.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+					<div id="chair" class="step slide" data-x="10500">
+      <div class="slide-text">
+        <p>Its an old rickety chair. What were you really expecting? </p>
+		<p><a href='#lookAround'>LOOK AROUND</a> - Study the room for a bit.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+	
+						<div id="drawer" class="step slide" data-x="11500">
+      <div class="slide-text">
+        <p>You open the drawer. </br> There's a key inside.</p>
+		<p><a href='#keyFound'>PICKUP KEY</a> - Grab that rusty key.</p>
+		<p><a href='#lookAround'>LOOK AROUND</a> - Study the room for a bit.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+							<div id="keyFound" class="step slide" data-x="12500">
+      <div class="slide-text">
+        <p>You grabbed the key!</br>It'll probably open a door.</p>
+		<p><a href='#attemptLockWin'>TRY DOOR</a> - Attempt to head for the exit.</p>
+        <div class="event-text"></div>
+      </div>
+      
+    </div>
+								<div id="attemptLockWin" class="step slide" data-x="13500">
+      <div class="slide-text">
+        <p>You go for the door, key in hand.</br>You slide the key into the lock.</br>
+		You attempt to turn the door knob, it works.</br>
+		The door opens, you're free!</p>
+        <div class="event-text"></div>
+		<div class="menu"><a href="#" onclick='location = window.location.pathname; return false;'>START OVER</a></div>
+      </div>
+      
+    </div>
+</div>
+
+<script src="impress.js"></script>
+<script>impress().init();</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>!window.jQuery && document.write('<script src="jquery-1.4.1.min.js"><\/script>')</script>
+<script src="jquery.raptorize.1.0.js"></script>
+
+<script src="game.js"></script>
+<script src="dragDrop.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+Tile Layers:
+Foreground 1
+Foreground 2
+Foreground 3
+Main-Game-Layer
+Background 1
+Background 2
+Background 3
+
+Image Layers:
+Background 1
+Background 2
+Background 3
+

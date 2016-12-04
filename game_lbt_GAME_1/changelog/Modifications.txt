@@ -1,0 +1,47 @@
+Version 1.02:
+Changed alert box to say[ levelstr + " Complete!" ]
+
+Version 1.03:
+Modified coinEntity to allow for dynamic adjustment based on levelCoinCount.
+
+Version 1.04:
+Added new entities, jump/flying/octo.
+Added new resources jumper/octo
+
+Version 1.05:
+Added switch structure to support continous levels.
+Added "tutorial and "level3" to available levels.
+Added resetting of totalcoin var to screens.js
+
+Version 1.06:
+Remodified Tutorial and level 1.
+
+Version 1.07:
+Added pre-level and post-level screens.
+Added lives counter.
+Levels now continue from where you die, unless you run out of levels.
+Added remoded levels 2 & 3.
+Added Win Screen.
+
+Version 1.08:
+Changed pre/post screens to dynamically update.
+Added death counter. (resets upon new level/new game)
+Added the first two powerups: +1 life, and +3lifes. (With animation)
+Re-vamped all of the levels to include new bonus lives.
+
+Version 1.09:
+Added a fourth level.
+Added future support for ladders.
+---
+To-DO:
+Make more dynamic/interesting WIN screen.
+Make a "GAME OVER" screen.
+REDO GAMESTAT CODE for new melon engine.
+do parrallax backgrounds
+remove "sky" tiles
+
+Add levels 4 and 5
+
+To-DO Stretch-goal:
+Add Sounds
+
